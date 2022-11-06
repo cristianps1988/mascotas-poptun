@@ -6,56 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascotas Poptun</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="/js/scrollreveal.js"></script>
     <link rel="shortcut icon" href="/images/favicon2.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a class="imagen" href="index.html">
+    <header class="cabecero load-hidden">
+        <a class="imagen" href="#home">
             <img id="logo" src="/images/logo.png" alt="logotipo">
         </a>    
   
         <nav>
             <div class="contenedor-nav">         
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Galeria</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Ubicacion</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#ubicacion">Ubicacion</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>
         
-    </header>
-    <section class="texto-principal">
-        <div class="texto-header">
-            <h1>Bienvenidos a Mastocas Poptún</h1>
-            <h2>La mejor clínica veterinaria del norte de Guatemala</h2>
-            <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.38,99.18 C130.92,220.56 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFFFFF;"></path></svg></div>
-        </div>
-                     
-    </section>
-   
+    </header>   
 
-    <main>
-        <section class="contenedor nosotros">
-            <h2 class="titulo">Nosotros</h2>
-            <div class="contenedor-nosotros">
-                <img id="nosotros-img" src="/images/nosotros.jpeg" alt="nosotros">
-                <div class="contenedor-texto-nosotros">
-                    <h3><span>1</span>Equipo de trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti eum velit repellendus nam numquam porro illo perferendis, quam, nostrum at atque voluptatem et beatae cum. Rem animi maiores quo?</p>
-                    <h3><span>2</span>Insumos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti eum velit repellendus nam numquam porro illo perferendis, quam, nostrum at atque voluptatem et beatae cum. Rem animi maiores quo?</p>
-                </div>
-            </div>
+    <main class="main" id="home">
+        <section class="texto-principal">
+            <div class="texto-header">
+                <h1>Bienvenidos a Mastocas Poptún</h1>
+                <h2>La mejor clínica veterinaria del norte de Guatemala</h2>
+                <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.38,99.18 C130.92,220.56 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFFFFF;"></path></svg></div>
+            </div>                         
         </section>
 
-        <section class="galeria">
+        <section class="nosotros" id="nosotros">
+            <div class="contenedor nosotros">
+                <h2 class="titulo">Nosotros</h2>
+                <div class="contenedor-nosotros">
+                    <img id="nosotros-img" src="/images/nosotros.jpeg" alt="nosotros">
+                    <div class="contenedor-texto-nosotros">
+                        <h3><span>1</span>Equipo de trabajo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti eum velit repellendus nam numquam porro illo perferendis, quam, nostrum at atque voluptatem et beatae cum. Rem animi maiores quo?</p>
+                        <h3><span>2</span>Insumos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti eum velit repellendus nam numquam porro illo perferendis, quam, nostrum at atque voluptatem et beatae cum. Rem animi maiores quo?</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="galeria" id="galeria">
             <div class="contenedor">
                 <h2 class="titulo">Galeria</h2>
                 <div class="fotos-galeria">
@@ -110,7 +114,7 @@
             </div>
         </section>
 
-        <section class="servicios">            
+        <section class="servicios" id="servicios">            
             <div class="contenedor">
                 <h2 class="titulo">Servicios</h2>
                 <div class="servicios-cont">
@@ -136,17 +140,17 @@
             </div>
         </section>
 
-        <section class="ubicacion">
+        <section class="ubicacion" id="ubicacion">
             <div class="contenedor">
                 <div class="contenedor-ubicacion">
                     <h2 class="titulo">Ubicacion</h1>
-                    <img id="ubicacion-imagen" src="/images/ubicacion.jpeg" alt="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.5155686561875!2d-89.42353298513787!3d16.347678388709404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6062b84bb4ae9b%3A0xe71cda392079089a!2sMascotas%20cl%C3%ADnica%20veterinaria!5e0!3m2!1ses-419!2sco!4v1667748967613!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="iframe-ubicacion"></iframe>
                 </div>                
             </div>
         </section>
     </main>
 
-    <footer class="contacto">
+    <footer class="contacto" id="contacto">
         <h1 class="titulo">Contacto</h1>
         <div class="contenedor-contacto">
             <div class="cont-contacto">
@@ -164,8 +168,12 @@
                 <p>@mascotaspoptun</p>
             </div>
         </div>
-        <h2 class="final"> <a class="final" href="http://www.linkedin.com/in/cristianps1988"> Hecho con ❤️ por Cristian Peña </a></h2>
+        <div class="final">
+            <a href="http://www.linkedin.com/in/cristianps1988"> Hecho con ❤️ por Cristian Peña </a>
+        </div>
+        
     </footer>
-    
+    <script src="/js/animacion.js"></script>
+
 </body>
 </html>
