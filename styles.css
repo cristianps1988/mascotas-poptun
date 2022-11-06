@@ -49,13 +49,6 @@ body{
     margin: 0;
 }
 
-html.sr .load-hidden {
-    visibility: hidden;
-  }
-
-  html.sr .contacto {
-    visibility: hidden;
-  }
 
 /* Menu */
 
